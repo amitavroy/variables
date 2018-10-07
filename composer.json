@@ -1,0 +1,27 @@
+{
+    "name": "amitavroy/variables",
+    "description": "A package to save variables in database to use them throughout the application.",
+    "require": {
+        "php": "7.1",
+        "laravel/framework": "~5.5.0|~5.6.0|~5.7.0"
+    },
+    "authoload": {
+        "psr-4": {
+            "Amitav\\Variables\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amitav Roy",
+            "email": "reachme@amitavroy.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amitav\\Variables\\VariablesServiceProvider"
+            ]
+        }
+    }
+}
