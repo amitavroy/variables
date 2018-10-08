@@ -1,6 +1,12 @@
 {
     "name": "amitavroy/variables",
     "description": "A package to save variables in database to use them throughout the application.",
+    "keywords": [
+        "laravel-package",
+        "variables",
+        "data-store"
+    ],
+    "homepage": "https://github.com/amitavroy/variables",
     "require": {
         "php": "7.1",
         "laravel/framework": "~5.5.0|~5.6.0|~5.7.0"
