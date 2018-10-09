@@ -13,6 +13,7 @@ To install, you just need to require the package using the following command
 composer require amitavroy/variables 
 ``` 
 
+## Usage
 This package provides two helper functions, one to save to the database and one to retrive it.
 
 ```
