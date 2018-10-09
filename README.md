@@ -12,3 +12,17 @@ To install, you just need to require the package using the following command
 ```
 composer require amitavroy/variables 
 ``` 
+
+This package provides two helper functions, one to save to the database and one to retrive it.
+
+```
+Variables::set('name-of-the-variable', 'data');
+```
+
+You can store any kind of data. In the end, the data will be converted to JSON as we are using the MySQL JSON data type to store the information.
+
+To retrive any saved data, you can use the following function
+
+```
+Variables::get('name-of-the-variable');
+```
