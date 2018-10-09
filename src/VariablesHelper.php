@@ -6,9 +6,15 @@ use Amitav\Variables\Models\Variable;
 
 class VariablesHelper
 {
-    public static function get($key)
+    public static function get($key, $default = null)
     {
-        return Variable::where('key', $key)->pluck('value')->first();
+        $data = Variable::where('key', $key)->pluck('value')->first();
+
+        if (!$data) {
+            return $default;
+        }
+
+        return $data;
     }
 
     public static function set($key, $value)
